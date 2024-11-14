@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background:url("https://images.pexels.com/photos/28962823/pexels-photo-28962823/free-photo-of-minimalist-3d-abstract-art-with-geometric-shapes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .signup-wrapper {
+    width: 100%;
+    max-width: 400px;
+    flex-grow: 1;
+    margin-top: 20px;
+  }
+  
+  .signup-box {
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 10px 20px 50px 15px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+  
+  .signup-box h1 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+  
+  .signup-box p {
+    color: #dcdcdc;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    margin-top: 1px;
+    font-size: 0.9em;
+    color: #dcdcdc;
+  }
+  
+  .input-group input[type="text"],
+  .input-group input[type="email"],
+  .input-group input[type="password"],
+  .input-group input[type="file"],
+  .input-group select,
+  .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #757575;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #ffffff;
+  }
+  
+  .input-group textarea {
+    resize: vertical;
+  }
+  
+  .submit-btn,
+  .reset-btn {
+    width: 48%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: hsl(221, 100%, 58%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 4%;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #005ecf;
+  }
+  
+  .reset-btn {
+    background-color: #d9534f;
+  }
+  
+  .reset-btn:hover {
+    background-color: #c9302c;
+  }
+  
+  
+  .footer {
+    background-color: #0f3443;
+    color: #ffffff;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  
+  .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  

@@ -90,6 +90,7 @@
   
   .reset-btn {
     background-color: #d9534f;
+    margin-top: 10px;
   }
   
   .reset-btn:hover {

@@ -1,0 +1,73 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url('https://images.pexels.com/photos/28962823/pexels-photo-28962823/free-photo-of-minimalist-3d-abstract-art-with-geometric-shapes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 64, 133, 0.9);
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Page Content Styles */
+.page-content {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.page-content h2 {
+  font-size: 32px;
+  color: #004085;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.page-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* Footer Styles */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 64, 133, 0.9);
+  color: white;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 15px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

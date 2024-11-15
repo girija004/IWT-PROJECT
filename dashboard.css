@@ -6,10 +6,13 @@
 }
 
 body {
-  background-image: url('https://images.pexels.com/photos/28962823/pexels-photo-28962823/free-photo-of-minimalist-3d-abstract-art-with-geometric-shapes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://img.freepik.com/free-vector/exams-concept-illustration_114360-2754.jpg?t=st=1731681560~exp=1731685160~hmac=22368d56b5f0ab19d820ed81f7d41d22bcb3dd67ea32809f7058e6cf6b533b18&w=1380');
+  background-size: contain;
+  background-position: 95% 100px;
   background-repeat: no-repeat;
+  height: 600px;
 }
 
 header {
@@ -17,12 +20,14 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: rgba(0, 64, 133, 0.8); 
+  background-color: rgba(0, 64, 133, 0.8);
   color: white;
+  font-weight: bold;
 }
 
 .header-left h1 {
   font-size: 28px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .header-right {
@@ -49,51 +54,46 @@ header {
   transition: background-color 0.3s;
 }
 
+.header-right .button.register {
+  background-color: #28a745;
+}
+
 .header-right .button:hover {
   background-color: #0056b3;
 }
 
-.homepage {
+.header-right .button.register:hover {
+  background-color: #218838;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
   padding: 40px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent background for content area */
-  border-radius: 10px;
-  margin: 20px;
-}
-
-.homepage img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-.homepage p {
-  margin-top: 15px;
-  font-size: 20px;
-  color: #333;
+  gap: 40px;
+  color: #ffffff;
 }
 
 .dashboard {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 30px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 200px;
+  margin-top: 130px;
+
 }
 
 .service-box {
-  width: 200px;
-  height: 120px;
-  background-color: #007bff;
+  background-color: rgba(0, 123, 255, 0.8);
+  padding: 20px;
   border-radius: 8px;
   transition: background-color 0.3s ease, transform 0.3s ease;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .service-box:hover {
-  background-color: #0056b3;
+  background-color: rgba(0, 86, 179, 0.9);
   transform: translateY(-3px);
 }
 
@@ -102,13 +102,12 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
   color: #fff;
   text-decoration: none;
 }
 
 .service-box h2 {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 5px;
 }
 
@@ -116,12 +115,27 @@ header {
   font-size: 14px;
 }
 
+.homepage {
+  flex-grow: 1;
+  max-width: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.homepage p {
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
 .footer {
   padding: 20px;
   text-align: center;
   background-color: rgba(0, 64, 133, 0.8);
   color: white;
-  margin-top: 170px;
+  margin-top: 60px;
 }
 
 .footer-links a {

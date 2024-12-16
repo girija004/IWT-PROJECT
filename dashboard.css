@@ -131,17 +131,13 @@ header {
   font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid rgb(0, 0, 0); /* Cursor effect */
+  border-right: 4px solid rgb(0, 0, 0); /* Cursor effect */
   width: 0;
-  animation: typing 5s steps(37, end), blink 4s step-end infinite;
+  animation: typing 2.9s steps(37, end), blink 0.5s step-end infinite; /* Adjusted blink duration */
   animation-fill-mode: forwards;
   position: absolute;
   left: 250px;
-  top:130px
-}
-.typewriter-text.finished {
-  color: rgb(0, 0, 0); /* Text becomes visible */
-  border-right: rgb(255, 255, 255); /* Remove cursor effect */
+  top: 130px;
 }
 
 @keyframes typing {
@@ -154,14 +150,14 @@ header {
 }
 
 @keyframes blink {
-  from,
-  to {
+  0%, 100% {
     border-color: transparent;
   }
-  100% {
-    border-color: rgb(0, 0, 0);
+  50% {
+    border-color: rgb(0, 0, 0); /* Blinking effect */
   }
 }
+
 
 .footer {
   padding: 20px;

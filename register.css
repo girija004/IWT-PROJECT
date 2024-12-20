@@ -1,119 +1,148 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background:url("https://images.pexels.com/photos/28962823/pexels-photo-28962823/free-photo-of-minimalist-3d-abstract-art-with-geometric-shapes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-  }
-  
-  .signup-wrapper {
-    width: 100%;
-    max-width: 400px;
-    flex-grow: 1;
-    margin-top: 20px;
-  }
-  
-  .signup-box {
-    padding: 30px;
-    border-radius: 30px;
-    box-shadow: 10px 20px 50px 15px rgba(255, 255, 255, 0.2);
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-  }
-  
-  .signup-box h1 {
-    font-size: 24px;
-    color: #000000;
-    margin-bottom: 15px;
-  }
-  
-  .signup-box p {
-    color: #dcdcdc;
-    margin-bottom: 20px;
-  }
-  
-  .input-group {
-    margin-bottom: 20px;
-  }
-  
-  .input-group label {
-    margin-top: 1px;
-    font-size: 0.9em;
-    color: #dcdcdc;
-  }
-  
-  .input-group input[type="text"],
-  .input-group input[type="email"],
-  .input-group input[type="password"],
-  .input-group input[type="file"],
-  .input-group select,
-  .input-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #757575;
-    border-radius: 8px;
-    font-size: 16px;
-    background-color: #ffffff;
-  }
-  
-  .input-group textarea {
-    resize: vertical;
-  }
-  
-  .submit-btn,
-  .reset-btn {
-    width: 48%;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background-color: hsl(221, 100%, 58%);
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-right: 4%;
-    transition: background-color 0.3s;
-  }
-  
-  .submit-btn:hover {
-    background-color: #005ecf;
-  }
-  
-  .reset-btn {
-    background-color: #d9534f;
-    margin-top: 10px;
-  }
-  
-  .reset-btn:hover {
-    background-color: #c9302c;
-  }
-  
-  
-  .footer {
-    background-color: #0f3443;
-    color: #ffffff;
-    padding: 10px 0;
-    width: 100%;
-    text-align: center;
-    font-size: 0.9em;
-  }
-  
-  .footer-links a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 5px;
-  }
-  
-  .footer-links a:hover {
-    text-decoration: underline;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://img.freepik.com/free-vector/exams-concept-illustration_114360-2754.jpg?t=st=1731681560~exp=1731685160~hmac=22368d56b5f0ab19d820ed81f7d41d22bcb3dd67ea32809f7058e6cf6b533b18&w=1380');
+  background-size: contain;
+  background-position: 95% 100px;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: rgba(0, 64, 133, 0.8);
+  color: white;
+  font-weight: bold;
+}
+
+.header-left h1 {
+  font-size: 28px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+.signup-wrapper {
+  width: 100%;
+  max-width: 400px;
+  flex-grow: 1;
+  margin-top: 20px;
+}
+
+.signup-box {
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 10px 20px 50px 15px rgba(255, 255, 255, 0.2);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+.signup-box h1 {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.signup-box p {
+  color: #dcdcdc;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  margin-top: 1px;
+  font-size: 0.9em;
+  color: #393434;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"],
+.input-group input[type="file"],
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #757575;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+.input-group textarea {
+  resize: vertical;
+}
+
+.submit-btn,
+.reg-btn {
+  width: 48%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: hsl(221, 100%, 58%);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 4%;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #005ecf;
+}
+
+.reg-btn {
+  background-color: #d9534f;
+  margin-top: 10px;
+}
+
+.reg-btn:hover {
+  background-color: #c9302c;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 0.9em;
+  background-color: #0f3443;
+  color: white;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.signup-wrapper .signup-box p{
+  color: #000000;
+}

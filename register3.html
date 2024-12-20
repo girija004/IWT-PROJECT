@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Register - Page 3</title>
   <link rel="stylesheet" href="register.css">
 </head>
+
 <body>
+  <header>
+    <div class="header-left">
+      <h1>EXAMHACK</h1>
+    </div>
+  </header>
 
-<div class="signup-wrapper">
-  <div class="signup-box">
-    <h1>Exam Portal Signup - Page 3</h1>
-    <form >
+  <div class="container">
+    <div class="signup-wrapper">
+      <div class="signup-box">
+        <h1>Exam Portal Signup - Step 3</h1>
+        <form>
 
-      <div class="input-group">
-        <label>Technical Skills:</label><br>
-        <label><input type="checkbox" name="skills" value="C"> C</label>
-        <label><input type="checkbox" name="skills" value="Java"> Java</label>
-        <label><input type="checkbox" name="skills" value="Python"> Python</label>
-        <label><input type="checkbox" name="skills" value="JSP"> JSP</label>
+          <div class="input-group">
+            <label>Technical Skills:</label><br>
+            <label><input type="checkbox" name="skills" value="C"> C</label>
+            <label><input type="checkbox" name="skills" value="Java"> Java</label>
+            <label><input type="checkbox" name="skills" value="Python"> Python</label>
+            <label><input type="checkbox" name="skills" value="JSP"> JSP</label>
+          </div>
+
+          <div class="input-group">
+            <label>Upload Resume:</label>
+            <input type="file" id="resume" name="resume">
+          </div>
+
+          <div class="input-group">
+            <label>Upload Photo:</label>
+            <input type="file" id="photo" name="photo">
+          </div>
+
+          <div class="input-group">
+
+            <button type="submit" class="submit-btn">Submit</button>
+            <br /><br>
+            <a href="register2.html" class="back-btn" style="font-size: 17px; text-decoration: none;">
+              &#8592;back
+            </a>
+          </div>
+        </form>
       </div>
-
-      <div class="input-group">
-        <label>Upload Resume:</label>
-        <input type="file" id="resume" name="resume">
-      </div>
-
-      <div class="input-group">
-        <label>Upload Photo:</label>
-        <input type="file" id="photo" name="photo">
-      </div>
-
-      <div class="input-group">
-       
-                <button type="submit" class="submit-btn">Submit</button>
-                <br/><br>
-                <a href="register2.html" class="back-btn" style="font-size: 17px; text-decoration: none;">
-                  &#8592;back
-                </a>
-              </div>
-    </form>
+    </div>
   </div>
-</div>
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Service</a> |
+      <a href="#">Contact Us</a>
+    </div>
+  </footer>
 
-<footer class="footer">
-  <div class="footer-links">
-    <a href="#">Privacy Policy</a> | 
-    <a href="#">Terms of Service</a> | 
-    <a href="#">Contact Us</a>
-  </div>
-</footer>
-<script src="validation3.js"></script>
 </body>
+
 </html>
